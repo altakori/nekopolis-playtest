@@ -1,0 +1,49 @@
+name: 냥토피아 플레이테스트 후기
+description: 2D·3D 플레이 경험, UX, 버그를 알려주세요.
+title: "[플레이테스트] "
+labels:
+  - playtest
+body:
+  - type: dropdown
+    id: view
+    attributes:
+      label: 플레이한 화면
+      options:
+        - 2D
+        - 3D
+        - 2D와 3D 모두
+        - 모바일
+    validations:
+      required: true
+  - type: input
+    id: tutorial
+    attributes:
+      label: 진행한 튜토리얼 단계
+      placeholder: 예) 맑은 물 연결, q2 해금, 첫 배송
+  - type: textarea
+    id: fun
+    attributes:
+      label: 재미있었던 부분
+      placeholder: 계속 플레이하고 싶었던 이유를 알려주세요.
+  - type: textarea
+    id: confusing
+    attributes:
+      label: 이해하기 어렵거나 불편했던 부분
+      placeholder: UI, 용어, 목표, 건설 조작 등
+    validations:
+      required: true
+  - type: textarea
+    id: bug
+    attributes:
+      label: 버그와 재현 순서
+      placeholder: 1. ... 2. ... 3. ...
+  - type: input
+    id: environment
+    attributes:
+      label: 환경
+      placeholder: 예) Windows Chrome 1440x900 / iPhone Safari
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 개선 제안
+      placeholder: 추가하고 싶은 기능이나 바꾸고 싶은 점
